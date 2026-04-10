@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -10,11 +11,15 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-navy rounded-lg flex items-center justify-center">
-            <span className="text-mint font-black text-sm leading-none">I</span>
-          </div>
-          <span className="text-navy font-bold text-lg tracking-tight">Invoy</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="https://framerusercontent.com/images/XOXY9pwgAk8bGvWGFYqMR4dcoxE.png"
+            alt="Invoy"
+            width={100}
+            height={40}
+            className="h-8 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}

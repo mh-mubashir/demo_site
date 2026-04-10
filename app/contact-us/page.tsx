@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -210,7 +211,13 @@ export default function ContactPage() {
         {/* Contact details */}
         <section className="bg-white py-12 px-4">
           <div className="max-w-lg mx-auto flex flex-col sm:flex-row gap-8 justify-center text-center sm:text-left">
-            <div className="flex flex-col items-center sm:items-start gap-1">
+            <div className="flex flex-col items-center sm:items-start gap-2">
+              <Image
+                src="https://framerusercontent.com/images/LMIi5iwsKCxHvi7UFMXtk4a4Lw.svg"
+                alt="Email"
+                width={40}
+                height={40}
+              />
               <span className="text-navy font-semibold text-sm">Email</span>
               <a
                 href="mailto:team@dissolveit.ai"
@@ -220,7 +227,13 @@ export default function ContactPage() {
               </a>
             </div>
             <div className="hidden sm:block w-px bg-gray-100" />
-            <div className="flex flex-col items-center sm:items-start gap-1">
+            <div className="flex flex-col items-center sm:items-start gap-2">
+              <Image
+                src="https://framerusercontent.com/images/QUIgSEnCtTg1ZZCm2Oj3MHzQQ.svg"
+                alt="Location"
+                width={40}
+                height={40}
+              />
               <span className="text-navy font-semibold text-sm">Location</span>
               <span className="text-gray-text text-sm">Boston, MA</span>
             </div>

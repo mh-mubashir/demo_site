@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -42,72 +43,16 @@ function HeroSection() {
           </div>
         </div>
 
-        {/* Product mockup */}
+        {/* Real product screenshot */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-light-blue rounded-2xl p-5 sm:p-7 border border-purple/10 shadow-2xl shadow-purple/10">
-            {/* Browser chrome */}
-            <div className="flex items-center gap-2 mb-5">
-              <div className="w-3 h-3 rounded-full bg-red-300" />
-              <div className="w-3 h-3 rounded-full bg-yellow-300" />
-              <div className="w-3 h-3 rounded-full bg-green-300" />
-              <div className="flex-1 bg-white/60 rounded-full h-5 mx-3" />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {/* Invoice card */}
-              <div className="md:col-span-2 bg-white rounded-xl p-5 shadow-sm">
-                <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <p className="text-xs text-gray-400 mb-0.5">Invoice</p>
-                    <p className="text-navy font-bold text-lg">#INV-0042</p>
-                  </div>
-                  <span className="bg-light-mint text-navy text-xs font-semibold px-3 py-1 rounded-full">
-                    Ready to Send
-                  </span>
-                </div>
-                <div className="border-t border-gray-100 pt-4 space-y-3">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-text">Brand Strategy (32hrs × $175)</span>
-                    <span className="font-semibold text-navy">$5,600</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-text">Workshop Facilitation</span>
-                    <span className="font-semibold text-navy">$1,200</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-text">Async Reviews (4hrs × $150)</span>
-                    <span className="font-semibold text-navy">$600</span>
-                  </div>
-                  <div className="border-t border-gray-100 pt-3 flex justify-between items-center">
-                    <span className="text-navy font-semibold text-sm">Total Due</span>
-                    <span className="text-purple font-bold text-xl">$7,400</span>
-                  </div>
-                </div>
-                <button className="mt-4 w-full bg-navy text-white text-sm font-semibold py-2.5 rounded-lg hover:bg-navy/90 transition-colors">
-                  Send Invoice
-                </button>
-              </div>
-
-              {/* Stats column */}
-              <div className="flex flex-col gap-4">
-                <div className="bg-navy rounded-xl p-4">
-                  <p className="text-white/50 text-xs mb-1">Revenue This Month</p>
-                  <p className="text-mint font-bold text-2xl">$24,800</p>
-                  <p className="text-white/40 text-xs mt-1">↑ 18% vs last month</p>
-                </div>
-                <div className="bg-light-purple rounded-xl p-4">
-                  <p className="text-navy/50 text-xs mb-1">Invoices Sent</p>
-                  <p className="text-navy font-bold text-2xl">12</p>
-                  <p className="text-navy/40 text-xs mt-1">9 paid · 3 pending</p>
-                </div>
-                <div className="bg-light-mint rounded-xl p-4">
-                  <p className="text-navy/50 text-xs mb-1">Payment Rate</p>
-                  <p className="text-navy font-bold text-2xl">99%</p>
-                  <p className="text-navy/40 text-xs mt-1">All-time accuracy</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Image
+            src="https://framerusercontent.com/images/2SN8lGSK7RBIaJxt9zSknFsI3A.png"
+            alt="Invoy dashboard"
+            width={1264}
+            height={790}
+            className="w-full rounded-2xl shadow-2xl shadow-purple/10 border border-purple/10"
+            priority
+          />
         </div>
       </div>
     </section>
@@ -116,30 +61,19 @@ function HeroSection() {
 
 /* ─── Partners ───────────────────────────────────────────────────── */
 function PartnersSection() {
-  const partners = [
-    "TechCrunch",
-    "Product Hunt",
-    "Y Combinator",
-    "Founders Forum",
-    "AngelList",
-    "BostInno",
-  ];
   return (
     <section className="bg-white py-14 px-4 border-b border-gray-100">
       <div className="max-w-5xl mx-auto">
         <p className="text-center text-gray-text/50 text-xs font-semibold uppercase tracking-widest mb-8">
           As showcased at
         </p>
-        <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12">
-          {partners.map((p) => (
-            <span
-              key={p}
-              className="text-navy/25 font-bold text-lg tracking-tight hover:text-navy/45 transition-colors"
-            >
-              {p}
-            </span>
-          ))}
-        </div>
+        <Image
+          src="https://framerusercontent.com/images/OmkjNSm6aEdwlXovJ7nPC4qOUg.png"
+          alt="Featured in"
+          width={3510}
+          height={1170}
+          className="w-full h-auto max-h-16 object-contain"
+        />
       </div>
     </section>
   );
@@ -195,41 +129,15 @@ function RevenueSection() {
           </Link>
         </div>
 
-        {/* Visual */}
-        <div className="bg-light-blue rounded-2xl p-6 border border-gray-100">
-          <div className="bg-white rounded-xl p-5 shadow-sm mb-4">
-            <p className="text-xs text-gray-400 font-medium mb-4">October — Billable Activity</p>
-            <div className="space-y-3">
-              {[
-                { label: "Client Calls", hours: "14h", pct: 70, color: "bg-purple" },
-                { label: "Design Work", hours: "32h", pct: 88, color: "bg-mint" },
-                { label: "Strategy Docs", hours: "8h", pct: 42, color: "bg-light-purple" },
-              ].map((item) => (
-                <div key={item.label}>
-                  <div className="flex justify-between text-xs text-gray-text mb-1.5">
-                    <span>{item.label}</span>
-                    <span className="font-semibold">{item.hours}</span>
-                  </div>
-                  <div className="w-full bg-gray-100 rounded-full h-2">
-                    <div
-                      className={`${item.color} h-2 rounded-full transition-all`}
-                      style={{ width: `${item.pct}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="bg-navy rounded-xl p-4 flex justify-between items-center">
-            <div>
-              <p className="text-white/50 text-xs mb-0.5">Auto-detected billable</p>
-              <p className="text-white font-bold text-xl">54h / month</p>
-            </div>
-            <div className="text-right">
-              <p className="text-white/50 text-xs mb-0.5">Revenue potential</p>
-              <p className="text-mint font-bold text-xl">$9,450</p>
-            </div>
-          </div>
+        {/* Real feature screenshot */}
+        <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-lg">
+          <Image
+            src="https://framerusercontent.com/images/rhmnKBQGALhc1GYMEIkuEUhdf5w.png"
+            alt="Invoy revenue maximization feature"
+            width={1418}
+            height={750}
+            className="w-full h-auto"
+          />
         </div>
       </div>
     </section>
@@ -240,12 +148,7 @@ function RevenueSection() {
 function HowItWorksSection() {
   const cards = [
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
-            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-      ),
+      icon: "https://framerusercontent.com/images/3MsvJMDHSMY5shGKaPM4DgaP8.svg",
       title: "Instant, Accurate Invoice Generation",
       description:
         "Pull data from your calendar, notes, and communications to generate precise invoices in under 30 seconds.",
@@ -254,12 +157,7 @@ function HowItWorksSection() {
       iconBg: "bg-white/60",
     },
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
-            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-        </svg>
-      ),
+      icon: "https://framerusercontent.com/images/BT5YoglGUZrZjGEVzHign43hGfY.svg",
       title: "On-Demand Invoice Explanation",
       description:
         "Let clients ask about line items. Invoy provides clear, professional explanations backed by your actual work log.",
@@ -268,12 +166,7 @@ function HowItWorksSection() {
       iconBg: "bg-white/60",
     },
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
-            d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-        </svg>
-      ),
+      icon: "https://framerusercontent.com/images/HeXQY8gOmjOijE81flY0kaM4rI.svg",
       title: "AI-Powered Productivity Tagging",
       description:
         "Automatically categorize tasks and time entries. Know exactly how you spend your hours and maximize billable time.",
@@ -282,12 +175,7 @@ function HowItWorksSection() {
       iconBg: "bg-white/60",
     },
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
-            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-        </svg>
-      ),
+      icon: "https://framerusercontent.com/images/If5u5katnLS4CbcnDuEAz6hXg.svg",
       title: "Smart-Edit & Consistent Templates",
       description:
         "Your brand, your style. Invoy remembers your invoice templates and ensures every document looks impeccably professional.",
@@ -296,12 +184,7 @@ function HowItWorksSection() {
       iconBg: "bg-white/60",
     },
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
-            d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-        </svg>
-      ),
+      icon: "https://framerusercontent.com/images/QuYFLwwXC0hw2c92US2nZpVhJ2s.svg",
       title: "Non-Stop Inbox Monitoring",
       description:
         "Invoy watches your inbox 24/7 for payment confirmations, disputes, and client messages — and responds intelligently.",
@@ -330,8 +213,8 @@ function HowItWorksSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {cards.map((card, i) => (
             <div key={i} className={`${card.bg} rounded-2xl p-6`}>
-              <div className={`w-10 h-10 ${card.iconBg} rounded-xl flex items-center justify-center mb-4 ${card.text}`}>
-                {card.icon}
+              <div className={`w-10 h-10 ${card.iconBg} rounded-xl flex items-center justify-center mb-4`}>
+                <Image src={card.icon} alt={card.title} width={32} height={32} />
               </div>
               <h3 className={`font-bold text-base mb-2 ${card.text}`}>{card.title}</h3>
               <p className={`text-sm leading-relaxed ${card.text} opacity-60`}>{card.description}</p>
@@ -340,6 +223,14 @@ function HowItWorksSection() {
 
           {/* CTA card */}
           <div className="bg-purple rounded-2xl p-6 flex flex-col justify-between">
+            <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center mb-4">
+              <Image
+                src="https://framerusercontent.com/images/yZM4boTl5iL3iECA5oFjkxVL3A.svg"
+                alt="Get started"
+                width={32}
+                height={32}
+              />
+            </div>
             <div>
               <h3 className="text-white font-bold text-lg mb-2">Ready to automate?</h3>
               <p className="text-white/70 text-sm leading-relaxed mb-6">
@@ -361,17 +252,6 @@ function HowItWorksSection() {
 
 /* ─── Tools ───────────────────────────────────────────────────────── */
 function ToolsSection() {
-  const tools = [
-    "Google Calendar",
-    "Gmail",
-    "Notion",
-    "Slack",
-    "Stripe",
-    "QuickBooks",
-    "PayPal",
-    "Xero",
-    "Linear",
-  ];
   return (
     <section className="bg-light-blue py-20 px-4">
       <div className="max-w-5xl mx-auto text-center">
@@ -386,18 +266,14 @@ function ToolsSection() {
           no disruption to how you already work.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
-          {tools.map((tool) => (
-            <div
-              key={tool}
-              className="bg-white border border-gray-200 rounded-xl px-5 py-3 text-sm font-medium text-navy shadow-sm hover:shadow-md transition-shadow cursor-default"
-            >
-              {tool}
-            </div>
-          ))}
-          <div className="bg-white border-2 border-dashed border-gray-300 rounded-xl px-5 py-3 text-sm font-medium text-gray-400">
-            + many more
-          </div>
+        <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-lg mb-10">
+          <Image
+            src="https://framerusercontent.com/images/IZcjvuAsCJuyb3IqYb8xVxvycA.png"
+            alt="Integrations with tools you know and love"
+            width={1400}
+            height={1040}
+            className="w-full h-auto"
+          />
         </div>
 
         <Link
@@ -419,14 +295,14 @@ function TestimonialsSection() {
         "Invoy completely changed how I run my freelance business. I used to spend Sunday evenings writing invoices — now it takes 30 seconds. I've recovered thousands in billable hours I was missing.",
       name: "Adam Wharton",
       title: "Freelance Strategist",
-      initials: "AW",
+      avatar: "https://framerusercontent.com/images/9QTtNiXph1VqSWTush3MIKOHbMA.png",
     },
     {
       quote:
         "As a product consultant working across five clients, keeping track of what I billed was a nightmare. Invoy's AI just figures it out. The payment accuracy is insane — I haven't had a dispute in months.",
       name: "Maria Chen",
       title: "Product Consultant",
-      initials: "MC",
+      avatar: "https://framerusercontent.com/images/AwrLZocaDUdkN8hOcqVU9IAh0.png",
     },
   ];
 
@@ -469,9 +345,13 @@ function TestimonialsSection() {
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-purple flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
-                  {t.initials}
-                </div>
+                <Image
+                  src={t.avatar}
+                  alt={t.name}
+                  width={36}
+                  height={36}
+                  className="rounded-full object-cover w-9 h-9 flex-shrink-0"
+                />
                 <div>
                   <p className="text-navy font-semibold text-sm">{t.name}</p>
                   <p className="text-gray-text text-xs">{t.title}</p>
