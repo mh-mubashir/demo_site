@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Invoy Poster Board — 20 × 28 inches (1920 × 2688 px at 96 dpi)
+  Import into Canva via File → Import, then replace the QR placeholder.
+  Fonts used: DM Serif Display, DM Sans (add via Canva's Brand Kit if needed)
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1920 2688"
+     width="1920" height="2688">
+
+  <!-- ── PAGE ── -->
+  <rect width="1920" height="2688" fill="white"/>
+  <rect x="96" y="96" width="1728" height="2496"
+        fill="white" stroke="#e8e8e8" stroke-width="1"/>
+
+  <!-- ── LOGO "invoy" — DM Serif Display 230 px, centered ── -->
+  <text font-family="'DM Serif Display', Georgia, serif"
+        font-size="230" text-anchor="middle" x="960" y="978">
+    <tspan fill="#111111">in</tspan><tspan fill="#6C5CE7">voy</tspan>
+  </text>
+
+  <!-- ── PURPLE DIVIDER BAR (1.2 in = 115 px wide) ── -->
+  <rect x="902" y="1022" width="116" height="3"
+        fill="#6C5CE7" rx="2"/>
+
+  <!-- ── TAGLINE — DM Sans 300, 53 px, centered ── -->
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="53" font-weight="300" fill="#222222"
+        text-anchor="middle" letter-spacing="-1">
+    <tspan x="960" y="1165">8–10 hours of your week</tspan>
+    <tspan x="960" dy="72">swallowed by admin.</tspan>
+    <tspan x="960" dy="72">
+      <tspan font-weight="500" fill="#6C5CE7">Take them back.</tspan>
+    </tspan>
+  </text>
+
+  <!-- ── QR BOX (4 in = 384 px), centered ── -->
+  <rect x="768" y="1402" width="384" height="384"
+        fill="white" stroke="#111111" stroke-width="4" rx="14"/>
+  <!-- Inner placeholder fill -->
+  <rect x="788" y="1422" width="344" height="344"
+        fill="#f5f5f5" rx="6"/>
+  <!-- Placeholder label -->
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="30" fill="#cccccc" text-anchor="middle"
+        font-style="italic">
+    <tspan x="960" y="1596">Replace with</tspan>
+    <tspan x="960" dy="40">QR Code</tspan>
+  </text>
+
+  <!-- ── QR LABEL "SCAN TO JOIN FREE" ── -->
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="21" fill="#666666" font-weight="400"
+        text-anchor="middle" x="960" y="1840"
+        letter-spacing="5">SCAN TO JOIN FREE</text>
+
+  <!-- ── PILL "First 100 members · Direct founding access" ── -->
+  <rect x="635" y="1920" width="650" height="52"
+        fill="#f0eeff" rx="26"/>
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="21" font-weight="500" fill="#4834d4"
+        text-anchor="middle" x="960" y="1952" letter-spacing="1">
+    First 100 members  ·  Direct founding access
+  </text>
+
+</svg>

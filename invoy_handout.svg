@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Invoy Handout — 8.5 × 11 inches (816 × 1056 px at 96 dpi)
+  Import into Canva via File → Import, then replace the QR placeholder.
+  Fonts used: DM Serif Display, DM Sans (add via Canva's Brand Kit if needed)
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 816 1056"
+     width="816" height="1056">
+
+  <!-- ── PAGE ── -->
+  <rect width="816" height="1056" fill="white"/>
+  <rect x="48" y="48" width="720" height="960"
+        fill="white" stroke="#e0e0e0" stroke-width="0.5"/>
+
+  <!-- ── TOP ROW: Logo + Tagline ── -->
+  <!-- Logo "invoy" — DM Serif Display 67 px -->
+  <text font-family="'DM Serif Display', Georgia, serif"
+        font-size="67" y="168">
+    <tspan x="96" fill="#111111">in</tspan><tspan fill="#6C5CE7">voy</tspan>
+  </text>
+
+  <!-- Tagline (right-aligned, bottom of logo) -->
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="13.5" font-weight="300" fill="#888888"
+        text-anchor="end">
+    <tspan x="720" y="143">AI-driven revenue integrity</tspan>
+    <tspan x="720" dy="19">for independent professionals</tspan>
+  </text>
+
+  <!-- ── DIVIDER ── -->
+  <line x1="96" y1="188" x2="720" y2="188"
+        stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- ── HOOK TEXT ── -->
+  <!-- Purple left border -->
+  <rect x="96" y="212" width="3" height="94" fill="#6C5CE7"/>
+  <!-- Hook body — DM Sans 300, 19 px, line-height 1.6 (≈ 30 px) -->
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="19" font-weight="300" fill="#222222">
+    <tspan x="120" y="234">You went independent for
+      <tspan font-weight="500" fill="#111111"> freedom</tspan>.
+    </tspan>
+    <tspan x="120" dy="30">But 8–10 hours of your week still disappear into invoices,</tspan>
+    <tspan x="120" dy="30">follow-ups, and worklogs that should never have been your job.</tspan>
+  </text>
+
+  <!-- ── STATS GRID (4 columns) ── -->
+  <!-- Column widths: (624 − 3×12) ÷ 4 = 147 px each; gap = 12 px -->
+
+  <!-- Stat 1: 8–10h -->
+  <rect x="96" y="338" width="147" height="97" fill="#f7f6ff" rx="9"/>
+  <text font-family="'DM Serif Display', Georgia, serif"
+        font-size="31" fill="#4834d4" x="112" y="382">8–10h</text>
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="9.5" fill="#666666">
+    <tspan x="112" y="397">lost to admin every</tspan>
+    <tspan x="112" dy="13">single week</tspan>
+  </text>
+
+  <!-- Stat 2: $31K+ -->
+  <rect x="255" y="338" width="147" height="97" fill="#f7f6ff" rx="9"/>
+  <text font-family="'DM Serif Display', Georgia, serif"
+        font-size="31" fill="#4834d4" x="271" y="382">$31K+</text>
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="9.5" fill="#666666">
+    <tspan x="271" y="397">potential revenue</tspan>
+    <tspan x="271" dy="13">lost annually</tspan>
+  </text>
+
+  <!-- Stat 3: 75% -->
+  <rect x="414" y="338" width="147" height="97" fill="#f7f6ff" rx="9"/>
+  <text font-family="'DM Serif Display', Georgia, serif"
+        font-size="31" fill="#4834d4" x="430" y="382">75%</text>
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="9.5" fill="#666666">
+    <tspan x="430" y="397">of that time recovered</tspan>
+    <tspan x="430" dy="13">with Invoy</tspan>
+  </text>
+
+  <!-- Stat 4: $100 -->
+  <rect x="573" y="338" width="147" height="97" fill="#f7f6ff" rx="9"/>
+  <text font-family="'DM Serif Display', Georgia, serif"
+        font-size="31" fill="#4834d4" x="589" y="382">$100</text>
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="9.5" fill="#666666">
+    <tspan x="589" y="397">per month — fraction</tspan>
+    <tspan x="589" dy="13">of what's recovered</tspan>
+  </text>
+
+  <!-- ── HOW IT WORKS ── -->
+  <!-- Section label -->
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="10.5" font-weight="500" fill="#888888"
+        x="96" y="472" letter-spacing="2.5">HOW INVOY WORKS</text>
+
+  <!-- Step columns: x = 96 / 308 / 520 -->
+
+  <!-- Step 1: Low Autonomy -->
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="9.5" font-weight="500" fill="#6C5CE7"
+        x="96" y="491" letter-spacing="1.5">LOW AUTONOMY</text>
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="11.5" font-weight="300" fill="#333333">
+    <tspan x="96" y="509">
+      <tspan font-weight="500" fill="#111111">Calendar + voice agent.</tspan>
+    </tspan>
+    <tspan x="96" dy="17">Log tasks by speaking.</tspan>
+    <tspan x="96" dy="17">Draft invoices in seconds.</tspan>
+  </text>
+
+  <!-- Step 2: Medium Autonomy -->
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="9.5" font-weight="500" fill="#6C5CE7"
+        x="308" y="491" letter-spacing="1.5">MEDIUM AUTONOMY</text>
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="11.5" font-weight="300" fill="#333333">
+    <tspan x="308" y="509">
+      <tspan font-weight="500" fill="#111111">Email integration.</tspan> Invoy
+    </tspan>
+    <tspan x="308" dy="17">reads your work context</tspan>
+    <tspan x="308" dy="17">and builds daily logs auto.</tspan>
+  </text>
+
+  <!-- Step 3: High Autonomy -->
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="9.5" font-weight="500" fill="#6C5CE7"
+        x="520" y="491" letter-spacing="1.5">HIGH AUTONOMY</text>
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="11.5" font-weight="300" fill="#333333">
+    <tspan x="520" y="509">
+      <tspan font-weight="500" fill="#111111">Desktop AI.</tspan> Recognizes
+    </tspan>
+    <tspan x="520" dy="17">your tasks live and logs</tspan>
+    <tspan x="520" dy="17">everything while you work.</tspan>
+  </text>
+
+  <!-- ── CTA ROW (pinned to bottom) ── -->
+  <line x1="96" y1="802" x2="720" y2="802"
+        stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- QR placeholder box (134 × 134 px = 1.4 in) -->
+  <rect x="96" y="824" width="134" height="134"
+        fill="white" stroke="#111111" stroke-width="2" rx="7.5"/>
+  <rect x="107" y="835" width="112" height="112"
+        fill="#f0f0f0" rx="4"/>
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="10" fill="#bbbbbb" text-anchor="middle"
+        font-style="italic">
+    <tspan x="163" y="893">Replace with</tspan>
+    <tspan x="163" dy="14">QR Code</tspan>
+  </text>
+
+  <!-- CTA headline -->
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="17" font-weight="500" fill="#111111"
+        x="252" y="845">Scan to join free today.</text>
+
+  <!-- CTA body -->
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="11.5" font-weight="300" fill="#555555">
+    <tspan x="252" y="866">As one of our first 100 members, you get a direct</tspan>
+    <tspan x="252" dy="17">line to shape what Invoy builds next. Start with</tspan>
+    <tspan x="252" dy="17">low autonomy — no commitment, no setup overhead.</tspan>
+  </text>
+
+  <!-- CTA pill -->
+  <rect x="252" y="921" width="288" height="22"
+        fill="#e8f5ee" rx="11"/>
+  <text font-family="'DM Sans', Arial, sans-serif"
+        font-size="9.5" font-weight="500" fill="#0a5c3a"
+        text-anchor="middle" x="396" y="936" letter-spacing="0.5">
+    Join Invoy free  ·  Founding member access
+  </text>
+
+</svg>
